@@ -20,25 +20,25 @@
 	<h1 class=cap>Использование вычислительных возможностей R для проверки стат. гипотез</h1>
 	<br/>
 	<p>
-	Возникла недавно потребность решить вроде бы классическую задачу мат.
-	 статистики.Проводится испытание определенного push воздействия на 
-	 группу людей. Необходимо оценить наличие эффекта. Конечно, можно делать 
-	 это с помощью вероятностного подхода.
+		Возникла недавно потребность решить вроде бы классическую задачу мат.
+	 	статистики.Проводится испытание определенного push воздействия на 
+	 	группу людей. Необходимо оценить наличие эффекта. Конечно, можно делать 
+	 	это с помощью вероятностного подхода.
 	 </p>
 	<br/>
-	<p>Но рассуждать с бизнесом о нулевых гипотезах и значении p-value 
-	совершенно бесполезно и контрпродуктивно.
+	<p>
+		Но рассуждать с бизнесом о нулевых гипотезах и значении p-value 
+		совершенно бесполезно и контрпродуктивно.
 	</p>
 	<br/>
 	<p>
-	Как можно по состоянию на февраль 2019 года сделать это максимально 
-	просто и быстро имея под руками ноутбук «средней руки»? Заметка 
-	еферативная, формул нет.
+		Как можно по состоянию на февраль 2019 года сделать это максимально 
+		просто и быстро имея под руками ноутбук «средней руки»? Заметка 
+		еферативная, формул нет.
 	</p>
 	<br/>
 	<p>Является продолжением  
-		<a href="https://habr.com/ru/users/i_shutov/posts/">
-		предыдущих публикаций
+		<a href="https://habr.com/ru/users/i_shutov/posts/">предыдущих публикаций
 		</a>
 	</p>
 	<p>
@@ -47,7 +47,8 @@
 		</h1>		
 	</p>
 	<p>
-	Есть две статистически идентичные по измеряемому показателю группы пользователей (A и B). На группу B оказывается воздействие. Приводит ли это воздействие к изменению среднего значения измеряемому показателю?
+		Есть две статистически идентичные по измеряемому показателю группы пользователей (A и B). 
+		На группу B оказывается воздействие. Приводит ли это воздействие к изменению среднего значения измеряемому показателю?
 	</p>
 	<p>
 		Наиболее популярный вариант — посчитать статистические критерии и сделать вывод. Мне нравится пример 
@@ -61,19 +62,26 @@
 	<p>
 		<ol>
 			<li>
-			<p >В действительности мат. статистику мало кто понимает от начала и до конца. Всегда надо держать в голове условия при которых можно применять те или иные методы.</p>
+				<p >
+					В действительности мат. статистику мало кто понимает от начала и до конца. 
+					Всегда надо держать в голове условия при которых можно применять те или иные методы.
+				</p>
 			</li>
 			<li>
 				<p >
-				Как правило, использование инструментов и трактовка получаемых результатов идет по приципу однократного вычисления и принятия «светофорного» решения. Чем меньше вопросов, тем лучше для всех участников процесса.
+					Как правило, использование инструментов и трактовка получаемых результатов идет по приципу 
+					однократного вычисления и принятия «светофорного» решения. Чем меньше вопросов, тем лучше 
+					для всех участников процесса.
 				</p>
 			</li>
 	
 		</ol>	
 	</p>
-	<P style="font-weight:lighter";>
+	<P style="
+		font-weight:lighter;
+	">
 		<h1>
-		Критика p-value
+			Критика p-value
 		</h1>
 	</P>	
 	<p>
@@ -82,15 +90,21 @@
 	<p>
 		<ul>
 			<li>
-				Nature. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1339793/">Scientific method: Statistical errors. P values, the 'gold standard' of statistical validity, are not as reliable as many scientists assume., Regina Nuzzo. Nature 506, 150–152</a>
+				Nature. 
+				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1339793/">Scientific method: Statistical errors. P values, the 'gold standard' of statistical validity, are not as reliable as many 					scientists assume., Regina Nuzzo. Nature 506, 150–152
+				</a>
 			</li>
 		<br/>
 			<li>
-				Nature Methods. <a href="https://www.nature.com/articles/nmeth.3288"> The fickle P value generates irreproducible results, Lewis G Halsey, Douglas Curran-Everett, Sarah L Vowler & Gordon B Drummond. Nature Methods volume 12, pages 179–185 (2015)</a>
+				Nature Methods. 
+				<a href="https://www.nature.com/articles/nmeth.3288"> The fickle P value generates irreproducible results, Lewis G Halsey, Douglas Curran-Everett, Sarah L Vowler & Gordon B Drummond. Nat					ure Methods volume 12, pages 179–185 (2015)
+				</a>
 			</li>
 		<br/>
 			<li>
-				ELSEVIER. <a href="https://www.sciencedirect.com/science/article/pii/S0037196308000620?via%3Dihub">A Dirty Dozen: Twelve P-Value Misconceptions, Steven Goodman. Seminars in Hematology Volume 45, Issue 3, July 2008, Pages 135-140</a>
+				ELSEVIER. 
+				<a href="https://www.sciencedirect.com/science/article/pii/S0037196308000620?via%3Dihub">A Dirty Dozen: Twelve P-Value Misconceptions, Steven Goodman. Seminars in Hematology Volume 45, I					ssue 3, July 2008, Pages 135-140
+				</a>
 			</li>
 		</ul>
 	</p>
@@ -98,144 +112,161 @@
 		Что можно сделать?
 	</h1>
 	<p>
-	Сейчас у каждого есть компьютер под руками, поэтому метод Монте-Карло спасает ситуацию. От расчетов p-value переходим к расчету доверительных интервалов (confidence interval) для разницы среднего.
+		Сейчас у каждого есть компьютер под руками, поэтому метод Монте-Карло 
+		спасает ситуацию. От расчетов p-value переходим к расчету доверительных 
+		интервалов (confidence interval) для разницы среднего.
 	</p>
 	<p>
-	Книг и материалов множество, но в двух словах (resamapling & fitting) очень компактно изложено в докладе <a href="https://www.youtube.com/watch?v=Iq9DzN6mvYA&t=4s">Jake Vanderplas — «Statistics for Hackers» — PyCon 2016</a>. Сама <a href="https://speakerdeck.com/jakevdp/statistics-for-hackers">презентация</a>.
+		Книг и материалов множество, но в двух словах (resamapling & fitting) очень компактно изложено в докладе 
+		<a href="https://www.youtube.com/watch?v=Iq9DzN6mvYA&t=4s">Jake Vanderplas — «Statistics for Hackers» — PyCon 2016
+		</a>. 
+		Сама 
+		<a href="https://speakerdeck.com/jakevdp/statistics-for-hackers">презентация
+		</a>.
 	</p>
 	<p>
-		Одна из начальных работ по этой теме, включая предложения по графической визуализации, была написана хорошо известным в советское время популяризатором математики Мартином Гарднером:<a 		href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1339793/>Confidence intervals rather than P values: estimation rather than hypothesis testing. M.J. Gardner and D.G. Altman, Br Med J (Clin Res Ed). 1986 Mar 15; 292(6522): 746–750</a>.
+		Одна из начальных работ по этой теме, включая предложения по графической визуализации, 
+		была написана хорошо известным в советское время популяризатором математики Мартином 
+		Гарднером:
+		<a 		href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1339793/>Confidence intervals rather than P values: estimation rather than hypothesis testing. M.J. Gardner and D.G. Altman, Br Med J (C			lin Res Ed). 1986 Mar 15; 292(6522): 746–750
+		</a>.
 	</p>
 	<h1>
 		Как использовать для этой задачи R?
 	</h1>
 	<p>
-		тобы не делать все руками на нижнем уровне, посмотрим на текущее состояние экосистемы. Не так давно на R был переложен весьма удобный пакет <a href="https://cran.r-project.org/web/packages/dabestr/index.html"> dabestr: Data Analysis using Bootstrap-Coupled Estimation</a>.		
+		тобы не делать все руками на нижнем уровне, посмотрим на текущее состояние экосистемы. Не так давно на R был переложен весьма удобный пакет
+		 <a href="https://cran.r-project.org/web/packages/dabestr/index.html"> dabestr: Data Analysis using Bootstrap-Coupled Estimation
+		 </a>.		
 	</p>
 	<p>
-		Принципы вычислений и анализа результатов, используемых в dabestr в формате шпаргалок описаны здесь:<a href="http://www.estimationstats.com/">ESTIMATION STATISTICS BETA ANALYZE YOUR DATA WITH EFFECT SIZES</a>.
+		Принципы вычислений и анализа результатов, используемых в dabestr в формате
+		 шпаргалок описаны здесь:
+		 <a href="http://www.estimationstats.com/">ESTIMATION STATISTICS BETA ANALYZE YOUR DATA WITH EFFECT SIZES
+		 </a>.
 	</p>	
 	<div class="spoiler">
 		<input type="checkbox" id="spoilerid_1"><label for="spoilerid_1">
-Пример R Notebook для «пощупать»:
+			Пример R Notebook для «пощупать»:
 		</label><div class="spoiler_body">
 		<div style="
-	dysplay:block;
-	border:1px solid #e5e8ec;
-	background:e5e8ec;
-	margin-bottom:20px;
-	">
+			dysplay:block;
+			border:1px solid #e5e8ec;
+			background:e5e8ec;
+			margin-bottom:20px;
+		">
 			<pre>
-	---
-title: "A/B тестирование средствами bootstrap"
-output: 
-  html_notebook:
-    self_contained: TRUE
-editor_options: 
-  chunk_output_type: inline
----
-			</pre>
+				---
+				title: "A/B тестирование средствами bootstrap"
+				output: 
+				  html_notebook:
+				    self_contained: TRUE
+				editor_options: 
+				  chunk_output_type: inline
+				---
+		</pre>
 		</div>
 		<div style="
-	dysplay:block;
-	border:1px solid #e5e8ec;
-	background:e5e8ec;
-	">
-		<pre>
-library(tidyverse)
-library(magrittr)
-library(tictoc)
-library(glue)
-library(dabestr)
+				dysplay:block;
+				border:1px solid #e5e8ec;
+				background:e5e8ec;
+		">
+			<pre>
+				library(tidyverse)
+				library(magrittr)
+				library(tictoc)
+				library(glue)
+				library(dabestr)
 		</pre>
 		</div>
 		<h1>
-		Cимуляция
-	</h1>
-	<p>
-		Создадим логнормальное распределение длительности операций.
-	</p>
-	<div style="
-	dysplay:block;
-	border:1px solid #e5e8ec;
-	background:e5e8ec;
-	">
-		<pre>
-		my_rlnorm &lt;- function(n, mean, sd){
-  # пересчитываем мат. моменты: https://en.wikipedia.org/wiki/Log-normal_distribution#Arithmetic_moments
-  location &lt- log(mean^2 / sqrt(sd^2 + mean^2))
-  shape &lt- sqrt(log(1 + (sd^2 / mean^2)))
-  print(paste("location:", location))
-  print(paste("shape:", shape))
-  rlnorm(n, location, shape)  
-}
+			Cимуляция
+		</h1>
+		<p>
+			Создадим логнормальное распределение длительности операций.
+		</p>
+		<div style="
+			dysplay:block;
+			border:1px solid #e5e8ec;
+			background:e5e8ec;
+		">
+			<pre>
+				my_rlnorm &lt;- function(n, mean, sd){
+			  # пересчитываем мат. моменты: https://en.wikipedia.org/wiki/Log-normal_distribution#Arithmetic_moments
+			  location &lt- log(mean^2 / sqrt(sd^2 + mean^2))
+			  shape &lt- sqrt(log(1 + (sd^2 / mean^2)))
+			  print(paste("location:", location))
+			  print(paste("shape:", shape))
+			  rlnorm(n, location, shape)  
+				}
 
-# N пользователей категории (A = Control)
-A_control &lt- my_rlnorm(n = 10^3, mean = 500, sd = 150) %T>%
-  {print(glue("mean = {mean(.)}; sd = {sd(.)}"))}
+				# N пользователей категории (A = Control)
+				A_control &lt- my_rlnorm(n = 10^3, mean = 500, sd = 150) %T>%
+				  {print(glue("mean = {mean(.)}; sd = {sd(.)}"))}
 
-# N пользователей категории (B = Test)
-B_test &lt- my_rlnorm(n = 10^3, mean = 525, sd = 150) %T>%
-  {print(glue("mean = {mean(.)}; sd = {sd(.)}"))}
-	</pre>
-	</div>
-	<p>
-		Собираем данные в виде, необходимом для анализа средствами <i>dabestr</i>, и проводим анализ.
-	</p>
-	<div style="
-	dysplay:block;
-	border:1px solid #e5e8ec;
-	background:e5e8ec;
-	">
-		<pre>
-		f &lt- tibble(Control = A_control, Test = B_test) %>%
-  gather(key = "group", value = "value")
+				# N пользователей категории (B = Test)
+				B_test &lt- my_rlnorm(n = 10^3, mean = 525, sd = 150) %T>%
+				  {print(glue("mean = {mean(.)}; sd = {sd(.)}"))}
+			</pre>
+		</div>
+		<p>
+			Собираем данные в виде, необходимом для анализа средствами <i>dabestr</i>, и проводим анализ.
+		</p>
+		<div style="
+			dysplay:block;
+			border:1px solid #e5e8ec;
+			background:e5e8ec;
+		">
+			<pre>
+						f &lt- tibble(Control = A_control, Test = B_test) %>%
+				  gather(key = "group", value = "value")
 
-tic("bootstrapping")
-two_group_unpaired &lt- df %>%
-  dabest(group, value, 
-         # The idx below passes "Control" as the control group, 
-         # and "Test" as the test group. The mean difference
-         # will be computed as mean(Test) - mean(Control).
-         idx = c("Control", "Test"), 
-         paired = FALSE,
-         reps = 5000
-         )
-toc()	
-		</pre>
+				tic("bootstrapping")
+				two_group_unpaired &lt- df %>%
+				  dabest(group, value, 
+				         # The idx below passes "Control" as the control group, 
+				         # and "Test" as the test group. The mean difference
+				         # will be computed as mean(Test) - mean(Control).
+				         idx = c("Control", "Test"), 
+				         paired = FALSE,
+				         reps = 5000
+				         )
+				toc()	
+			</pre>
+		</div>
+		<p>
+			Поглядим на результаты
+		</p>
+			<div style="
+			dysplay:block;
+			border:1px solid #e5e8ec;
+			background:e5e8ec;
+		">
+				<pre>
+					two_group_unpaired 
+					plot(two_group_unpaired)
+				</pre>
+		</div>
+		<hr style="border:1px dashed black; width:50%;align:left" /> <!как выровнять линию влево? -->
+		<hr style="border:1px dashed black; width:50%;" />
+		</div>	
 	</div>
-	<p>
-		Поглядим на результаты
-	</p>
-	<div style="
-	dysplay:block;
-	border:1px solid #e5e8ec;
-	background:e5e8ec;
-	">
-		<pre>
-		two_group_unpaired 
-plot(two_group_unpaired)
-		</pre>
-	</div>
-	<hr style="border:1px dashed black; width:50%;align:left" /> <!как выровнять линию влево? -->
-	<hr style="border:1px dashed black; width:50%;" />
-	</div>	</div>
 	<p>
 		Результат в виде CI
 	</p>
 	<div style="
-	dysplay:block;
-	border:1px solid #e5e8ec;
-	background:e5e8ec;
+		dysplay:block;
+		border:1px solid #e5e8ec;
+		background:e5e8ec;
 	">
 	<pre>
 		DABEST (Data Analysis with Bootstrap Estimation) v0.2.0
-=======================================================
-Unpaired mean difference of Test (n=1000) minus Control (n=1000)
- 223 [95CI  209; 236]
+		=======================================================
+		Unpaired mean difference of Test (n=1000) minus Control (n=1000)
+		 223 [95CI  209; 236]
 
-5000 bootstrap resamples.
-All confidence intervals are bias-corrected and accelerated.
+		5000 bootstrap resamples.
+		All confidence intervals are bias-corrected and accelerated.
 	</pre>
 	</div>
 	<p>
@@ -247,7 +278,9 @@ All confidence intervals are bias-corrected and accelerated.
 		<br/>
 		Предыдущая публикация — <a href="https://habr.com/ru/post/440700/">«Data Science «спецназ» собственными силами».</a>
 		<p>
-			Теги: <a href="https://habr.com/ru/search/?q=%5Bdata%20science%5D&target_type=posts">data science</a>
+			Теги: 
+			<a href="https://habr.com/ru/search/?q=%5Bdata%20science%5D&target_type=posts">data science
+			</a>
 		</p>
 	</p>
 	<div style="
@@ -261,59 +294,59 @@ All confidence intervals are bias-corrected and accelerated.
 			<img height=40px src="1q.png">
 		</div>
 		<div style="
-		display: inline-block;
-		width:40px;
-		padding:5px 5px;
+			display: inline-block;
+			width:40px;
+			padding:5px 5px;
 		">
 			+19
 		</div>
 		<div style="
-		display: inline-block;
-		width:40px;
-		padding-right:5px;
-		padding:5px 50px 5px 5px;
+			display: inline-block;
+			width:40px;
+			padding-right:5px;
+			padding:5px 50px 5px 5px;
 		">
 			<img height=50px src="2q.png">
 		</div>
 		<div style="
-		display: inline-block;
-		width:10%;
-		padding:5px;
+			display: inline-block;
+			width:10%;
+			padding:5px;
 		">
 			<img height=50px src="3q.png">
 		</div>
 		<div style="
-		display: inline-block;
-		width:40px;
-		padding:5px;
+			display: inline-block;
+			width:40px;
+			padding:5px;
 		">
 			33
 		</div>
 		<div style="
-		display: inline-block;
-		width:40px;
-		padding:5px 10px;
+			display: inline-block;
+			width:40px;
+			padding:5px 10px;
 		">
 			<img height=50px src="4q.png">
 		</div>
 		<div style="
-		display: inline-block;
-		width:40px;
-		padding:5px;
+			display: inline-block;
+			width:40px;
+			padding:5px;
 		">
 			1,9k
 		</div>
 		<div style="
-		display: inline-block;
-		width:40px;
-		padding:5px 20px 5px 10px;
+			display: inline-block;
+			width:40px;
+			padding:5px 20px 5px 10px;
 		">
 			<img height=50px src="5q.png"
 		</div>
 		<div style="
-		display: inline-block;
-		width:40px;
-		padding:5px 10px;
+			display: inline-block;
+			width:40px;
+			padding:5px 10px;
 		">
 			18 <!--почему эта цифра не идет правее изображения? -->
 		</div>	
